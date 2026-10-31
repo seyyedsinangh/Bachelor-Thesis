@@ -1,0 +1,221 @@
+architecture:
+  name: efod_vgg32_loihi_projection
+  attributes:
+    topology: mesh
+    width: 1
+    height: 1
+    link_buffer_size: 16
+    sync_model: fixed
+    latency_sync: 0.0
+  tile:
+    - name: proxy_tile[0..0]
+      attributes:
+        energy_north_hop: 0.0
+        latency_north_hop: 0.0
+        energy_east_hop: 0.0
+        latency_east_hop: 0.0
+        energy_south_hop: 0.0
+        latency_south_hop: 0.0
+        energy_west_hop: 0.0
+        latency_west_hop: 0.0
+      core:
+        - name: proxy_core[0..11]
+          attributes:
+            buffer_position: soma
+            buffer_inside_unit: false
+            max_neurons_supported: 1
+          axon_in:
+            - name: proxy_in
+              attributes:
+                energy_message_in: 0.0
+                latency_message_in: 0.0
+          soma:
+            - name: proxy_source_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 0.0
+                latency_access_neuron: 0.0
+                energy_update_neuron: 0.0
+                latency_update_neuron: 0.0
+                energy_spike_out: 0.0
+                latency_spike_out: 0.0
+            - name: proxy_join_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 0.0
+                latency_access_neuron: 0.0
+                energy_update_neuron: 0.0
+                latency_update_neuron: 0.0
+                energy_spike_out: 0.0
+                latency_spike_out: 0.0
+            - name: layer_0_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 3.145728e-05
+                latency_access_neuron: 6.144e-06
+                energy_update_neuron: 1.3271039999999998e-05
+                latency_update_neuron: 3.7888e-06
+                energy_spike_out: 4.7141555999999996e-06
+                latency_spike_out: 3.4012666666666661e-06
+            - name: layer_1_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 6.291456e-05
+                latency_access_neuron: 6.144e-06
+                energy_update_neuron: 2.6542079999999996e-05
+                latency_update_neuron: 3.7888e-06
+                energy_spike_out: 1.0455285669230767e-05
+                latency_spike_out: 3.7717480769230763e-06
+            - name: layer_2_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 6.291456e-05
+                latency_access_neuron: 6.144e-06
+                energy_update_neuron: 2.6542079999999996e-05
+                latency_update_neuron: 3.7888e-06
+                energy_spike_out: 2.6601286546153841e-05
+                latency_spike_out: 9.5964237179487155e-06
+            - name: layer_3_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 1.572864e-05
+                latency_access_neuron: 6.144e-06
+                energy_update_neuron: 6.6355199999999991e-06
+                latency_update_neuron: 3.7888e-06
+                energy_spike_out: 2.8851615692307692e-06
+                latency_spike_out: 4.1632923076923077e-06
+            - name: layer_4_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 1.572864e-05
+                latency_access_neuron: 6.144e-06
+                energy_update_neuron: 6.6355199999999991e-06
+                latency_update_neuron: 3.7888e-06
+                energy_spike_out: 1.0266956699999999e-05
+                latency_spike_out: 1.4815233333333333e-05
+            - name: layer_5_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 7.8643199999999999e-06
+                latency_access_neuron: 6.144e-06
+                energy_update_neuron: 3.3177599999999996e-06
+                latency_update_neuron: 3.7888e-06
+                energy_spike_out: 1.5118079307692307e-06
+                latency_spike_out: 4.363082051282051e-06
+            - name: layer_6_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 7.8643199999999999e-06
+                latency_access_neuron: 6.144e-06
+                energy_update_neuron: 3.3177599999999996e-06
+                latency_update_neuron: 3.7888e-06
+                energy_spike_out: 2.8026927923076923e-06
+                latency_spike_out: 8.0885794871794869e-06
+            - name: layer_7_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 1.96608e-06
+                latency_access_neuron: 6.0631578947368422e-06
+                energy_update_neuron: 8.2943999999999989e-07
+                latency_update_neuron: 3.7389473684210527e-06
+                energy_spike_out: 6.4674313846153839e-07
+                latency_spike_out: 7.3677732793522261e-06
+            - name: layer_8_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 1.048576e-06
+                latency_access_neuron: 6.144e-06
+                energy_update_neuron: 4.4236799999999995e-07
+                latency_update_neuron: 3.7888e-06
+                energy_spike_out: 7.1009400000000006e-08
+                latency_spike_out: 1.5369999999999999e-06
+            - name: layer_9_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 1.31072e-07
+                latency_access_neuron: 5.1200000000000001e-06
+                energy_update_neuron: 5.5295999999999994e-08
+                latency_update_neuron: 3.1573333333333337e-06
+                energy_spike_out: 3.8203846153846151e-10
+                latency_spike_out: 5.5128205128205118e-08
+            - name: layer_10_soma
+              attributes:
+                model: leaky_integrate_fire
+                energy_access_neuron: 3.9321600000000005e-08
+                latency_access_neuron: 4.6079999999999998e-06
+                energy_update_neuron: 1.65888e-08
+                latency_update_neuron: 2.8416e-06
+                energy_spike_out: 0
+                latency_spike_out: 0
+          dendrite:
+            - name: proxy_dendrite
+              attributes:
+                model: accumulator
+                energy_update: 0.0
+                latency_update: 0.0
+          synapse:
+            - name: proxy_join_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.0
+                latency_process_spike: 0.0
+            - name: layer_0_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.00016271022936923079
+                latency_process_spike: 3.8591292410256412e-05
+            - name: layer_1_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.00094817791120000003
+                latency_process_spike: 0.00010271825333333333
+            - name: layer_2_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.0021029155098000003
+                latency_process_spike: 0.00022781358384615385
+            - name: layer_3_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.0024024070992461539
+                latency_process_spike: 0.0010492089931623931
+            - name: layer_4_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.00058030466160000006
+                latency_process_spike: 0.00025146285538461534
+            - name: layer_5_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.0018374741294000002
+                latency_process_spike: 0.001593724033777778
+            - name: layer_6_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.00060815255480000004
+                latency_process_spike: 0.00052706031179487181
+            - name: layer_7_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.0005015970797384616
+                latency_process_spike: 0.0017173331395411609
+            - name: layer_8_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 0.00023042534104615383
+                latency_process_spike: 0.0014935753517948717
+            - name: layer_9_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 1.2708530800000002e-05
+                latency_process_spike: 0.00055113404444444454
+            - name: layer_10_synapse
+              attributes:
+                model: current_based
+                energy_process_spike: 6.837330769230769e-08
+                latency_process_spike: 8.8954871794871786e-06
+          axon_out:
+            - name: proxy_out
+              attributes:
+                energy_message_out: 0.0
+                latency_message_out: 0.0

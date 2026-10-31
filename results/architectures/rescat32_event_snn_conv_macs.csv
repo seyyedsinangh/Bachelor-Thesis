@@ -1,0 +1,27 @@
+name,macs,input_shape,output_shape,kernel,stride,groups
+backbone.core.patchify.conv,19660800,"(1, 2, 480, 640)","(1, 32, 120, 160)","(4, 4)","(4, 4)",1
+backbone.core.pre.conv,353894400,"(1, 32, 122, 162)","(1, 64, 120, 160)","(3, 3)","(1, 1)",1
+backbone.core.stage1.main1.conv,707788800,"(1, 64, 122, 162)","(1, 64, 120, 160)","(3, 3)","(1, 1)",1
+backbone.core.stage1.main2.conv,176947200,"(1, 64, 122, 162)","(1, 64, 60, 80)","(3, 3)","(2, 2)",1
+backbone.core.stage1.residual.conv,9830400,"(1, 64, 120, 160)","(1, 32, 60, 80)","(1, 1)","(2, 2)",1
+backbone.core.stage2.main1.conv,398131200,"(1, 96, 62, 82)","(1, 96, 60, 80)","(3, 3)","(1, 1)",1
+backbone.core.stage2.main2.conv,132710400,"(1, 96, 62, 82)","(1, 128, 30, 40)","(3, 3)","(2, 2)",1
+backbone.core.stage2.residual.conv,7372800,"(1, 96, 60, 80)","(1, 64, 30, 40)","(1, 1)","(2, 2)",1
+backbone.core.stage3.main1.conv,398131200,"(1, 192, 32, 42)","(1, 192, 30, 40)","(3, 3)","(1, 1)",1
+backbone.core.stage3.main2.conv,66355200,"(1, 192, 32, 42)","(1, 128, 15, 20)","(3, 3)","(2, 2)",1
+backbone.core.stage3.residual.conv,3686400,"(1, 192, 30, 40)","(1, 64, 15, 20)","(1, 1)","(2, 2)",1
+backbone.extras.0.conv,35389440,"(1, 192, 17, 22)","(1, 256, 8, 10)","(3, 3)","(2, 2)",1
+backbone.extras.1.conv,5898240,"(1, 256, 10, 12)","(1, 128, 4, 5)","(3, 3)","(2, 2)",1
+backbone.extras.2.conv,884736,"(1, 128, 6, 7)","(1, 128, 2, 3)","(3, 3)","(2, 2)",1
+head.regression_head.module_list.0,66355200,"(1, 96, 60, 80)","(1, 16, 60, 80)","(3, 3)","(1, 1)",1
+head.regression_head.module_list.1,49766400,"(1, 192, 30, 40)","(1, 24, 30, 40)","(3, 3)","(1, 1)",1
+head.regression_head.module_list.2,12441600,"(1, 192, 15, 20)","(1, 24, 15, 20)","(3, 3)","(1, 1)",1
+head.regression_head.module_list.3,4423680,"(1, 256, 8, 10)","(1, 24, 8, 10)","(3, 3)","(1, 1)",1
+head.regression_head.module_list.4,368640,"(1, 128, 4, 5)","(1, 16, 4, 5)","(3, 3)","(1, 1)",1
+head.regression_head.module_list.5,110592,"(1, 128, 2, 3)","(1, 16, 2, 3)","(3, 3)","(1, 1)",1
+head.classification_head.module_list.0,132710400,"(1, 96, 60, 80)","(1, 32, 60, 80)","(3, 3)","(1, 1)",1
+head.classification_head.module_list.1,99532800,"(1, 192, 30, 40)","(1, 48, 30, 40)","(3, 3)","(1, 1)",1
+head.classification_head.module_list.2,24883200,"(1, 192, 15, 20)","(1, 48, 15, 20)","(3, 3)","(1, 1)",1
+head.classification_head.module_list.3,8847360,"(1, 256, 8, 10)","(1, 48, 8, 10)","(3, 3)","(1, 1)",1
+head.classification_head.module_list.4,737280,"(1, 128, 4, 5)","(1, 32, 4, 5)","(3, 3)","(1, 1)",1
+head.classification_head.module_list.5,221184,"(1, 128, 2, 3)","(1, 32, 2, 3)","(3, 3)","(1, 1)",1

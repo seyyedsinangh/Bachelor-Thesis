@@ -1,0 +1,7 @@
+variant,model,pipeline,weights_state,seq_spike_rate,seq_spike_layer_count,seq_spike_layer_rate_min,seq_spike_layer_rate_median,seq_spike_layer_rate_max,seq_spike_dead_layers,seq_spike_near_dead_layers,seq_spike_saturated_layers,seq_spike_health_status,event_input_occupancy_mean
+vgg16,16-ST-VGG,event_snn,trained_limited_fragment,0.15783305497631553,11,0.04944577991452991,0.1691509748931624,0.6673026842948718,0,0,0,ok,0.30005421967078477
+vgg32,32-ST-VGG,event_snn,trained_limited_fragment,0.2133134659082633,11,0.0,0.13552383814102564,0.48226671006944444,1,1,0,warning,0.30005421967078477
+vgg64,64-ST-VGG,event_snn,trained_limited_fragment,0.11946761448900965,11,0.05478711772168803,0.16403954660790598,0.5426943108974359,0,0,0,ok,0.30005421967078477
+rescat16,ResCat-SNN-16,event_snn,trained_limited_fragment,0.19703103203292693,14,0.00906383547008547,0.1607213833800748,0.5922945045405983,0,0,0,ok,0.30005421967078477
+rescat32,ResCat-SNN-32,event_snn,trained_limited_fragment,0.17413886035243023,14,0.016484041132478634,0.15112816965478099,0.7233523637820513,0,0,0,ok,0.30005421967078477
+rescat64,ResCat-SNN-64,event_snn,trained_limited_fragment,0.13246690843198197,14,0.0,0.056107052534054486,0.6421750634348291,2,3,0,warning,0.30005421967078477
